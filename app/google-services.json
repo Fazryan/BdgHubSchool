@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "781642476641",
+    "firebase_url": "https://hubschool-99dbf.firebaseio.com",
+    "project_id": "hubschool-99dbf",
+    "storage_bucket": "hubschool-99dbf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:781642476641:android:612c57bbc6342840",
+        "android_client_info": {
+          "package_name": "com.example.fpp_109.damihubschool"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "781642476641-rednijpnmjg50ffiqhfjdb83rtnjtbok.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fpp_109.damihubschool",
+            "certificate_hash": "19c96aff137735f898c342e895bcd66fbd66e10e"
+          }
+        },
+        {
+          "client_id": "781642476641-23a632ataqn50kfudivum2jadk7emo4m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApEim4tHuPbtLgKX4_pVmxfUy3Ssx77nY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "781642476641-23a632ataqn50kfudivum2jadk7emo4m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

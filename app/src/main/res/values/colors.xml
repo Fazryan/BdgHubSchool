@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color> <!-- [ TEAL - 800 ] -->
+    <!-- [ TEAL - 800 ] -->
+    <!-- [ TEAL - 100 ] -->
+    <color name="colorAccent">#0ddeff</color> <!-- [ PINK - A400 ] -->
+    <color name="hitam">#000000</color>
+    <color name="putih">#ffffff</color>
+    <color name="goblog">#34d6ff</color>
+    <color name="trans">#00000cf9</color>
+
+
+    <color name="colorAddrStart">#E61C68</color>
+    <color name="colorAddrStartPressed">#CC1B5E</color>
+    <color name="colorAddrEnd">#127399</color>
+    <color name="colorAddrEndPressed">#126283</color>
+
+
+</resources>

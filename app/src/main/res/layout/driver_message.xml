@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fpp_109.damihubschool.sms"
+    tools:ignore="ContentDescription,HardcodedText"
+    android:background="#8bf0ff">
+
+    <RelativeLayout
+
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="-2dp"
+        android:layout_marginRight="-2dp"
+        android:layout_marginLeft="-2dp"
+        android:background="@drawable/transparangaris">
+
+        <ImageButton
+
+        android:id="@+id/back"
+        android:layout_width= "30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/trans"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+
+
+        //ImageView
+        //   android:layout_centerVertical="true"
+        //    android:id="@+id/tx2"
+        //    android:layout_width="41dp"
+        //    android:layout_height="41dp"
+        //    android:layout_marginStart="100dp"
+        //    app:srcCompat="@drawable/ic_account_box_black_24dp" />
+
+        <TextView
+            android:id="@+id/tx"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="115dp"
+            android:gravity="center"
+            android:hint="Member of Driver"
+            android:textColorHint="@color/hitam"
+            android:textSize="17sp"
+            tools:ignore="RelativeOverlap" />
+
+        <ImageButton
+            android:id="@+id/cm"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:background="@color/trans"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.8"
+            app:srcCompat="@drawable/ic_call_black_24dp" />
+
+    </RelativeLayout>
+
+        <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="5dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@android:drawable/ic_menu_send"
+        android:tint="@android:color/white"
+        app:fabSize="mini" />
+
+        <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/fab"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/input"
+            android:id="@+id/input"
+            />
+        </android.support.design.widget.TextInputLayout>
+
+        <ListView
+        android:layout_below="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:dividerHeight="16dp"
+        android:layout_above="@+id/fab"
+        android:divider="@android:color/transparent"
+        android:id="@+id/list_of_messages"
+        android:layout_marginBottom="16dp"/>
+
+</RelativeLayout>

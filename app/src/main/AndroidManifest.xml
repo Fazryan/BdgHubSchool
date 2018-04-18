@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.fpp_109.damihubschool">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+
+    <uses-sdk tools:overrideLibrary="com.stfalcon.multiimageview"/> <!-- min 16 -->
+
+    <!-- The following two permissions are not required to use
+    Google Maps Android API v2, but are recommended. -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name=".MainActivity2"
+            android:theme="@style/AppTheme2">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".menu"
+            android:label="@string/login"/>
+        <activity android:name=".login" />
+        <activity android:name=".login_driver"/>
+        <activity android:name=".register" />
+        <activity android:name=".lupapas" />
+        <activity android:name=".lupapas2" />
+        <activity android:name=".lupapas3" />
+        <activity android:name=".Np" />
+        <activity android:name=".gpsorangtua" />
+        <activity android:name=".DriverMessage"
+            android:theme="@style/AppTheme2"/>
+        <activity android:name=".Profil" />
+        <activity android:name=".profilDriver" />
+        <activity android:name=".phone" />
+        <activity android:name=".sms" />
+        <activity android:name=".MapsActivity"/>
+        <activity android:name="gojay.MainActivityGojay"/>
+
+
+
+
+
+    </application>
+
+
+
+
+
+
+</manifest>

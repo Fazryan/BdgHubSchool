@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundhub"
+    tools:context="com.example.fpp_109.damihubschool.menu"
+    tools:ignore="HardcodedText,MissingConstraints">
+
+
+    <android.support.v4.view.ViewPager
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+
+    </android.support.v4.view.ViewPager>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="222dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="42dp"
+            android:background="@drawable/kanan"
+            android:hint="Orang Tua"
+            android:textColorHint="@color/hitam"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+
+            android:id="@+id/imageView6"
+            android:layout_width="70dp"
+            android:layout_height="49dp"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/button"
+            android:background="@drawable/kiri"
+            android:src="@drawable/akun"
+            tools:ignore="ContentDescription" />
+
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button"
+            android:layout_marginTop="24dp"
+            android:layout_toEndOf="@+id/imageView6"
+            android:background="@drawable/kanan"
+            android:hint="Orang Tua Asuh"
+            android:textColorHint="@color/hitam"
+            app:layout_constraintHorizontal_bias="0.429"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="49dp"
+            android:layout_alignTop="@+id/driver"
+            android:layout_toStartOf="@+id/driver"
+            android:background="@drawable/kiridriver"
+            android:src="@drawable/drive"
+            tools:ignore="ContentDescription"
+            tools:layout_editor_absoluteX="51dp"
+            tools:layout_editor_absoluteY="294dp" />
+
+        <Button
+
+            android:id="@+id/driver"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button2"
+            android:layout_marginTop="26dp"
+            android:layout_toEndOf="@+id/imageView7"
+            android:background="@drawable/kanandriver"
+            android:hint="Driver"
+            android:textColorHint="@color/hitam"
+            app:layout_constraintHorizontal_bias="0.598"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+
+            android:id="@+id/imageView7"
+            android:layout_width="70dp"
+            android:layout_height="49dp"
+            android:layout_alignTop="@+id/button2"
+            android:layout_toStartOf="@+id/button2"
+            android:background="@drawable/kiri"
+            android:src="@drawable/akun"
+            tools:ignore="ContentDescription"
+            tools:layout_editor_absoluteX="51dp"
+            tools:layout_editor_absoluteY="294dp" />
+
+
+    </RelativeLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-3940256099942544/6300978111"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.google.android.gms.ads.AdView>
+
+
+</android.support.constraint.ConstraintLayout>
